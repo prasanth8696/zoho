@@ -1,0 +1,20 @@
+no_bits = int(input('enter '))
+
+arr = [int(i) for i in input().split()]
+
+
+for i in range(len(arr)) :
+
+
+ if arr[i] == 1 :
+  count += 1
+
+ else :
+  count = 0
+
+ if count == k :
+   
+
+
+
+print(new)

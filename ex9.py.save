@@ -1,0 +1,20 @@
+# qn --> print a10b20c300 op --> 
+
+
+
+str = input('enter ')
+
+temp = ''
+temp2 = ''
+for i in range(len(str)) :
+
+
+ if str[i].isnumeric() :
+   temp = str[i-1] 
+
+   while(str[i].isnumeric()) :
+     temp2 = temp2 + str[i]
+     i += 1
+   print(temp*int(temp2),end='')
+   temp2 = ''
+print()
