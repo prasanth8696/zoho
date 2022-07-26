@@ -30,7 +30,7 @@ def magicsquare(a) :
  for i in range(m) :
    for j in range(n) :
      row += a[i][j]
-     col += a[i][j]
+     col += a[j][i]
    if row != dig1 :
        return -1
    elif col != dig1 :
@@ -45,11 +45,11 @@ def magicsquare(a) :
 import matrix
 
 
-m = int(input('enter row '))
-n = int(input('enter column '))
+#m = int(input('enter row '))
+#n = int(input('enter column '))
 
-a = matrix.get_input(m,n)
-
+a,m,n = matrix.get_input()
+matrix.printMatrix(a)
 res = magicsquare(a)
 
 if res == 1:
